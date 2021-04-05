@@ -1,14 +1,28 @@
 PROJECT = lpc_strarter
 
-SOURCES := ./src/main.c 
+SOURCES := ./main.c 
 SOURCES += ./core/cmsis/driver_library/src/lpc17xx_gpio.c
 SOURCES += ./core/cmsis/driver_library/src/lpc17xx_libcfg_default.c
+
+SOURCES += ./FreeRTOS/portable/GCC/ARM_CM3/port.c
+SOURCES += ./FreeRTOS/portable/MemMang/heap_2.c
+SOURCES += ./FreeRTOS/croutine.c
+SOURCES += ./FreeRTOS/event_groups.c
+SOURCES += ./FreeRTOS/list.c
+SOURCES += ./FreeRTOS/queue.c
+SOURCES += ./FreeRTOS/stream_buffer.c
+SOURCES += ./FreeRTOS/tasks.c
+SOURCES += ./FreeRTOS/timers.c
+
 
 
 DEVICE_OBJECTS = ./core/device/src/system_LPC17xx.o ./core/device/src/startup_ARMCM3.o
 OBJECTS = $(SOURCES:.c=.o) $(DEVICE_OBJECTS)
 
-INCLUDE_PATHS = -I. -I./core -I./core/cmsis/inc -I./core/device/inc -I./core/cmsis/driver_library/inc
+INCLUDE_PATHS := -I. -I./core -I./core/device/inc -I./core/cmsis/inc -I./core/device/inc -I./core/cmsis/driver_library/inc
+
+INCLUDE_PATHS += -I./FreeRTOS/include -I./FreeRTOS/portable/GCC/ARM_CM3
+
 
 LINKER_SCRIPT = ./LPC1768.ld
 

@@ -79,11 +79,11 @@ __isr_vector:
     .long    0                     /* Reserved */
     .long    0                     /* Reserved */
     .long    0                     /* Reserved */
-    .long    SVC_Handler           /* SVCall Handler */
+    .long    vPortSVCHandler       /* SVCall Handler */
     .long    DebugMon_Handler      /* Debug Monitor Handler */
     .long    0                     /* Reserved */
-    .long    PendSV_Handler        /* PendSV Handler */
-    .long    SysTick_Handler       /* SysTick Handler */
+    .long    xPortPendSVHandler    /* PendSV Handler */
+    .long    xPortSysTickHandler   /* SysTick Handler */
 
     /* External interrupts */
     .long    WDT_IRQHandler        /*  0:  Watchdog Timer            */
@@ -190,10 +190,10 @@ Reset_Handler:
     def_irq_handler    MemManage_Handler
     def_irq_handler    BusFault_Handler
     def_irq_handler    UsageFault_Handler
-    def_irq_handler    SVC_Handler
+    def_irq_handler    vPortSVCHandler
     def_irq_handler    DebugMon_Handler
-    def_irq_handler    PendSV_Handler
-    def_irq_handler    SysTick_Handler
+    def_irq_handler    xPortPendSVHandler
+    def_irq_handler    xPortSysTickHandler
     def_irq_handler    Default_Handler
 
     def_irq_handler    WDT_IRQHandler
