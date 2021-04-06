@@ -86,6 +86,10 @@
     #error Missing definition:  configMAX_PRIORITIES must be defined in FreeRTOSConfig.h.  See the Configuration section of the FreeRTOS API documentation for details.
 #endif
 
+#if configMAX_PRIORITIES < 1
+    #error configMAX_PRIORITIES must be defined to be greater than or equal to 1.
+#endif
+
 #ifndef configUSE_PREEMPTION
     #error Missing definition:  configUSE_PREEMPTION must be defined in FreeRTOSConfig.h as either 1 or 0.  See the Configuration section of the FreeRTOS API documentation for details.
 #endif

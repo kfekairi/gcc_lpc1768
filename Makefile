@@ -35,7 +35,7 @@ OBJCOPY = arm-none-eabi-objcopy
 
 CPU = -mcpu=cortex-m3 -mthumb
 
-CC_FLAGS = $(CPU) -c -Os -fno-common -fmessage-length=0 -Wall -fno-exceptions -ffunction-sections -fdata-sections 
+CC_FLAGS = $(CPU) -c -Os -g -fno-common -fmessage-length=0 -Wall -fno-exceptions -ffunction-sections -fdata-sections 
 
 LD_FLAGS = $(CPU) -Wl,--gc-sections --specs=nano.specs 
 LD_SYS_LIBS = -lm -lc -lgcc -lnosys

@@ -3,6 +3,8 @@
         "lpc17xx_libcfg_default.h": "c",
         "lpc17xx_gpio.h": "c",
         "freertos.h": "c",
-        "portable.h": "c"
+        "portable.h": "c",
+        "lpc17xx.h": "c",
+        "task.h": "c"
     }
 }
