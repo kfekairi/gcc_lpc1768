@@ -23,7 +23,6 @@ INCLUDE_PATHS := -I. -I./core -I./core/device/inc -I./core/cmsis/inc -I./core/de
 
 INCLUDE_PATHS += -I./FreeRTOS/include -I./FreeRTOS/portable/GCC/ARM_CM3
 
-
 LINKER_SCRIPT = ./LPC1768.ld
 
 
