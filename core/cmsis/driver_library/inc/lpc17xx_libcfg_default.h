@@ -64,79 +64,79 @@
 #define _GPIO
 
 /* EXTI ------------------------------- */
-#define _EXTI
+// #define _EXTI
 
 /* UART ------------------------------- */
 #define _UART
 #define _UART0
-#define _UART1
-#define _UART2
-#define _UART3
+// #define _UART1
+// #define _UART2
+// #define _UART3
 
-/* SPI ------------------------------- */
-#define _SPI
+// /* SPI ------------------------------- */
+// #define _SPI
 
-/* SYSTICK --------------------------- */
-#define _SYSTICK
+// /* SYSTICK --------------------------- */
+// #define _SYSTICK
 
-/* SSP ------------------------------- */
-#define _SSP
-#define _SSP0
-#define _SSP1
-
-
-/* I2C ------------------------------- */
-#define _I2C
-#define _I2C0
-#define _I2C1
-#define _I2C2
-
-/* TIMER ------------------------------- */
-#define _TIM
-
-/* WDT ------------------------------- */
-#define _WDT
+// /* SSP ------------------------------- */
+// #define _SSP
+// #define _SSP0
+// #define _SSP1
 
 
-/* GPDMA ------------------------------- */
-#define _GPDMA
+// /* I2C ------------------------------- */
+// #define _I2C
+// #define _I2C0
+// #define _I2C1
+// #define _I2C2
+
+// /* TIMER ------------------------------- */
+// #define _TIM
+
+// /* WDT ------------------------------- */
+// #define _WDT
 
 
-/* DAC ------------------------------- */
-#define _DAC
-
-/* DAC ------------------------------- */
-#define _ADC
+// /* GPDMA ------------------------------- */
+// #define _GPDMA
 
 
-/* PWM ------------------------------- */
-#define _PWM
-#define _PWM1
+// /* DAC ------------------------------- */
+// #define _DAC
 
-/* RTC ------------------------------- */
-#define _RTC
+// /* DAC ------------------------------- */
+// #define _ADC
 
-/* I2S ------------------------------- */
-#define _I2S
 
-/* USB device ------------------------------- */
-#define _USBDEV
-#define _USB_DMA
+// /* PWM ------------------------------- */
+// #define _PWM
+// #define _PWM1
 
-/* QEI ------------------------------- */
-#define _QEI
+// /* RTC ------------------------------- */
+// #define _RTC
 
-/* MCPWM ------------------------------- */
-#define _MCPWM
+// /* I2S ------------------------------- */
+// #define _I2S
 
-/* CAN--------------------------------*/
-#define _CAN
+// /* USB device ------------------------------- */
+// #define _USBDEV
+// #define _USB_DMA
 
-/* RIT ------------------------------- */
-#define _RIT
+// /* QEI ------------------------------- */
+// #define _QEI
 
-/* EMAC ------------------------------ */
-#define _EMAC
+// /* MCPWM ------------------------------- */
+// #define _MCPWM
+
+// /* CAN--------------------------------*/
+// #define _CAN
+
+// /* RIT ------------------------------- */
+// #define _RIT
+
+// /* EMAC ------------------------------ */
+// #define _EMAC
 
 /************************** GLOBAL/PUBLIC MACRO DEFINITIONS *********************************/
 

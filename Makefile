@@ -1,8 +1,12 @@
 PROJECT = lpc_strarter
 
 SOURCES := ./main.c 
-SOURCES += ./core/cmsis/driver_library/src/lpc17xx_gpio.c
 SOURCES += ./core/cmsis/driver_library/src/lpc17xx_libcfg_default.c
+SOURCES += ./core/cmsis/driver_library/src/lpc17xx_gpio.c
+SOURCES += ./core/cmsis/driver_library/src/lpc17xx_pinsel.c
+SOURCES += ./core/cmsis/driver_library/src/lpc17xx_uart.c
+SOURCES += ./core/cmsis/driver_library/src/uart.c
+SOURCES += ./core/cmsis/driver_library/src/lpc17xx_clkpwr.c
 
 SOURCES += ./FreeRTOS/portable/GCC/ARM_CM3/port.c
 SOURCES += ./FreeRTOS/portable/MemMang/heap_2.c
